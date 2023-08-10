@@ -1,0 +1,179 @@
+/* Header */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 70px;
+	padding: 20px 60px;
+	width: 100%;
+	background: rgba(0, 0, 0, .2);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+	z-index: 100;
+}
+
+.navigation {
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation .logo {
+	font-size: 2em;
+	color: #fff;
+	user-select: none;
+	white-space: nowrap;
+	font-family: monospace;
+}
+
+.navigation .links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.navigation a {
+	position: relative;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navigation a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: all 0.15s linear;
+}
+
+.navigation a:hover::after,
+.dropdown_menu a:hover::after {
+	transform: scaleX(1);
+}
+
+.links .btnLogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	transition: all 0.15s ease-in-out;
+}
+
+.links .btnLogin-popup:hover {
+	background-color: #fff;
+	color: var(--color);
+}
+
+.navigation .toggle_btn {
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+	display: none;
+	position: absolute;
+	right: 60px;
+	top: 70px;
+	width: 200px;
+	height: 0px;
+	background: rgba(255, 255, 255, .5);
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: height 0.5s cubic-bezier(0.17, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+	height: 240px;
+}
+
+.dropdown_menu li {
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dropdown_menu a {
+	position: relative;
+	font-size: 1.1em;
+	color: var(--color);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.dropdown_menu a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: var(--color);
+	border-radius: 5px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: all 0.15s linear;
+}
+
+.dropdown_menu .btnLogin-popup {
+	width: 100%;
+	height: 40px;
+	background: transparent;
+	border: 2px solid var(--color);
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: var(--color);
+	font-weight: 500;
+	transition: all 0.15s ease-in-out;
+}
+
+.dropdown_menu .btnLogin-popup:hover {
+	background-color: var(--color);
+	color: #fff;
+}
+
+/* Responsive Navbar Design */
+@media (max-width: 992px) {
+	.navigation .links {
+		display: none;
+	}
+
+	.navigation .toggle_btn {
+		display: block;
+	}
+
+	.dropdown_menu {
+		display: block;
+	}
+}
+
+@media (max-width: 576px) {
+	.dropdown_menu {
+		left: 60px;
+		width: unset;
+	}
+}

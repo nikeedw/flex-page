@@ -1,0 +1,62 @@
+/* Modal Window (popup) */
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	top: 70px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.6s ease;
+}
+
+.popup.open .popup_content {
+	transform: translate(0, 0) rotateX(0deg);
+	opacity: 1;
+}
+
+.popup.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup_body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+.popup_content {
+	border-radius: 10px;
+	background: rgba(255, 255, 255, .8);
+	backdrop-filter: blur(30px);
+	color: var(--color);
+	max-width: 800px;
+	padding: 30px;
+	position: relative;
+	transition: all 0.6s ease;
+	opacity: 0;
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup_close {
+	text-decoration: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: var(--color);
+}
+
+.popup_title {
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.popup_text {
+	line-height: 25px;
+}

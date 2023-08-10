@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/form.css">
+	<link rel="stylesheet" href="styles/popup.css">
+	<title>Nikolaev Industries</title>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="#header">
+		<nav class="navigation">
+			<h2 class="logo">NIKOLAEV</h2>
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#popup" class="popup-link">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><button class="btnLogin-popup">Login</button></li>
+			</ul>
+			<div class="toggle_btn"><ion-icon name="chevron-down-outline"></ion-icon></ion-icon></div>
+		</nav>
+
+		<div class="dropdown_menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#popup" class="popup-link">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contacts</a></li>
+			<li><button class="btnLogin-popup">Login</button></li>
+		</div>
+	</header>
+
+	<!-- Modal Window (popup) -->
+	<div id="popup" class="popup">
+		<div class="popup_body">
+			<div class="popup_content">
+				<a href="#header" class="popup_close close-popup">X</a>
+				<div class="popup_title">About Project</div>
+				<div class="popup_text">
+					Here is my first Web Page created with HTML/CSS/JS(DOM).
+					I plan to learn react framework, GULP and mixins.
+					I got to add some bootstrap component to my site to make sure that I can work with Bootstrap5.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Login Form -->
+	<div class="wrapper">
+		<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+		<div class="form-box login">
+			<h2>Login</h2>
+			<form action="#">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input class="input-mail" type="email" required>
+					<label class="label-mail">Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="password" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox">Remember me</label>
+					<a href="#">Forgot Password?</a>
+				</div>
+				<button type="submit" class="btn">Login</button>
+				<div class="login-register">
+					<p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+				</div>
+			</form>
+		</div>
+
+		<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+		<div class="form-box register">
+			<h2>Registration</h2>
+			<form action="#">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="person"></ion-icon></span>
+					<input type="text" required>
+					<label>Username</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input class="input-mail" type="email" required>
+					<label class="label-mail">Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="password" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox">I agree to the terms & conditions</label>
+				</div>
+				<button type="submit" class="btn">Register</button>
+				<div class="login-register">
+					<p>Already have an account? <a href="#" class="login-link">Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="scripts/form.js"></script>
+	<script src="scripts/header.js"></script>
+	<script src="scripts/popup.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

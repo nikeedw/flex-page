@@ -1,0 +1,27 @@
+/* General */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+ }
+ 
+ body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 100vh;
+	 background: url(/background.jpg) no-repeat;
+	 background-size: cover;
+	 background-position: center;
+ }
+
+ li {
+	list-style: none;
+ }
+ 
+ /* :root */
+ :root {
+	 --color: rgb(15, 25, 45);
+ }
