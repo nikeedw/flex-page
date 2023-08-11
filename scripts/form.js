@@ -60,4 +60,3 @@ inputMail.forEach((element, index) => {
 	});
 });
 
-

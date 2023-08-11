@@ -173,7 +173,8 @@ header {
 
 @media (max-width: 576px) {
 	.dropdown_menu {
-		left: 60px;
+		left: 10px;
+		right: 10px;
 		width: unset;
 	}
 }
