@@ -15,9 +15,12 @@ loginLink.addEventListener('click', () => {
 btnPopup.forEach(button => {
 	button.addEventListener('click', () => {
 		wrapper.classList.toggle('active-popup');
-		const modalWindows = document.querySelectorAll('.popup');
-		let i = 0;
-		modalWindows[i].classList.remove('open');
+		let modalWindows = document.querySelectorAll('.popup');
+		for(let i = 0; i < modalWindows.length; i++) {
+			if(modalWindows[i].classList.contains('open')){
+				modalWindows[i].classList.remove('open');
+			}
+		}
 	})
 });
 

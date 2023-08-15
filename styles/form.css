@@ -7,7 +7,8 @@
   transform: translate(-50%, -50%) scale(0);
 	width: 400px;
 	height: 440px;
-	background: linear-gradient(70deg, rgb(20, 23, 49), rgb(159, 202, 251));
+	background: linear-gradient(60deg, #E0ECE4, #6b87fa);
+	border: 2px solid var(--color);
 	border-radius: 20px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 	display: flex;
@@ -63,9 +64,9 @@
 	align-items: center;
 	font-size: 2em;
 	color: #fff;
-	border-radius: 0 20px 0 20px;
+	border-radius: 0 0px 0 20px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 2;
 }
 
 .form-box h2 {
@@ -116,7 +117,7 @@
 	border: none;
 	outline: none;
 	font-size: 1em;
-	color: #fff;
+	color: var(--color);
 	font-weight: 500;
 	padding: 0 35px 0 5px;
 }
