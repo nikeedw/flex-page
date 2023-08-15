@@ -1,0 +1,79 @@
+
+/* Body */
+.like_placeholder {
+	width: 300px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Button */
+.like {
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position: relative;
+  width: 110px;
+  height: 45px;
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  background: #fff;
+  border: 0;
+  font-size: 0.9rem;
+  font-family: Futura;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+  outline: none;
+}
+
+.like .heart {
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+.like:hover {
+  color: #550101;
+  transform: scale(1.2);
+}
+
+.like:active {
+  transform: scale(1.4);
+}
+
+/* Span within Button */
+.like span {
+  position: absolute;
+  top: -55px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(83, 100, 251, 0.9);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  border-radius: 100px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.like:hover span {
+  opacity: 1;
+}
+
+.like span:after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(83, 100, 251, 0.99);
+}

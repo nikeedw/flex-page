@@ -1,0 +1,74 @@
+.request {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 240px;
+}
+
+.request div {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.request p {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #fff;
+	position: absolute;
+	left: 50px;
+	transition: all .2s linear;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.request a {
+	position: relative;
+	color: var(--color);
+	font-size: 18px;
+	border-radius: 20px;
+	border: 2px solid var(--color);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	transform-origin: right;
+	transition: all .6s ease;
+}
+
+.request a:hover {
+	width: 100%;
+	justify-content: flex-start;
+}
+
+.request .author a:hover {
+	background-color: cornflowerblue;
+}
+
+.request .phone a:hover {
+	background-color: rgb(147, 128, 255);
+}
+
+.request .vk a:hover {
+	background: linear-gradient(45deg, cornflowerblue, rgb(23, 23, 137));
+	color: var(--color);
+}
+
+.request .instagram a:hover {
+	background: linear-gradient(45deg, rgb(69, 64, 215), rgb(250, 26, 127));
+	color: #fff;
+}
+
+.request a:hover + p {
+	opacity: 1;
+	visibility: initial;
+}

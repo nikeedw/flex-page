@@ -24,10 +24,11 @@ header {
 
 .navigation .logo {
 	font-size: 2em;
-	color: #fff;
+	color:rgb(154, 158, 232);
+	text-shadow: 0px 0px 10px rgba(101, 106, 200, 0.3);
 	user-select: none;
 	white-space: nowrap;
-	font-family: serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navigation .links {

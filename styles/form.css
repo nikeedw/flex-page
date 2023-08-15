@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%) scale(0);
 	width: 400px;
 	height: 440px;
-	background: linear-gradient(60deg, #E0ECE4, #6b87fa);
+	background: linear-gradient(60deg, rgb(103, 142, 214), #7681ff);
 	border: 2px solid var(--color);
 	border-radius: 20px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, .5);

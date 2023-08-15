@@ -37,7 +37,7 @@
 
 .container .card .face.face1{
   position: relative;
-  background: linear-gradient(45deg, rgb(29, 16, 86), rgb(0, 0, 0));
+  background: linear-gradient(45deg, rgb(29, 16, 86), #7d88ff);
   display: flex;
   justify-content: center;
   align-content:center;
